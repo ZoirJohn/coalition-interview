@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*::-webkit-scrollbar-button {
+	display: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html,
+body {
+	font-family: 'Manrope', sans-serif;
+	font-size: 14px;
+	background: #F6F7F8;
+}
+
+a {
+	font-family: inherit;
+	color: black;
+	text-decoration: none;
+}
+
+h3 {
+	font-size: 1.72em;
+}
+
+.container {
+	max-width: 1564px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	height: 100vh;
+}
+
+header {
+	margin-top: 1.29em;
+	margin-bottom: 2.29em;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.86em 2.29em;
+	background: #fff;
+	border-radius: 3em;
+}
+
+.logo {
+	max-width: 210px;
+}
+
+.logo img {
+	display: block;
+	width: 100%;
+}
+
+.nav__list {
+	list-style: none;
+	display: flex;
+	gap: 2.5em;
+}
+
+.nav__list li {
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding: 0.8em 1.1em;
+}
+
+.active {
+	background: #01F0D0;
+	border-radius: 1.75em;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.86em;
+}
+
+.profile__data {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.57em;
+}
+
+.name {
+	font-weight: 600;
+}
+
+.title {
+	color: #707070;
+}
+
+.tools {
+	border-left: 1px solid #70707033;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 0.86em;
+}
+
+
+.sidebar {
+	flex: 0 0 367px;
+	background: #fff;
+	border-radius: 2em;
+	overflow: hidden;
+	grid-column: 1/2;
+	grid-row: 1/4;
+}
+
+.sidebar__caption {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.43em;
+	padding-bottom: 2.85em;
+}
+
+.patients {
+	list-style: none;
+	overflow-y: auto;
+	height: 88%;
+}
+
+.sidebar__profile {
+	justify-content: start;
+	padding: 1.14em 1.43em;
+}
+
+.active__profile {
+	background: #D8FCF7;
+}
+
+.profile__img {
+	width: 48px;
+	height: 48px;
+	display: block;
+}
+
+.profile__img img {
+	width: 100%;
+}
+
+.menu {
+	transform: rotate(90deg);
+}
+
+.profile__info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.29em;
+	flex: 1 0 auto;
+}
+
+.menu {
+	padding: 0 1em 1em;
+	transition: ease 200ms;
+}
+
+.menu:hover {
+	transform: scale(1.1) rotate(90deg);
+}
+
+main .container {
+	display: grid;
+	grid-template-columns: 367px 766px 367px;
+	grid-template-rows: 620px 80px 220px;
+	gap: 2.29em;
+}
+
+#myChart {
+	background: #F4F0FE;
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	width: 72% !important;
+	height: 100% !important;
+}
+
+.diagnosis-history {
+	padding: 1.43em;
+	background: #fff;
+	border-radius: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.diagnosis-history h3 {
+	margin-bottom: .83em;
+	width: 100%;
+	flex: 0 0 auto;
+}
+
+.chart {
+	display: flex;
+	margin: 0 0 1.5em;
+}
+
+.main-data__chart-data {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	background: #000;
+	background: #F4F0FE;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+	padding: 1.43em;
+	align-items: center;
+}
+
+.main-data__chart-data div {
+	width: 100%;
+}
+
+.main-data__chart-data h4 {
+	display: flex;
+	align-items: center;
+	gap: 0 0.25em;
+}
+
+.main-data__chart-data div p:nth-child(2) {
+	padding: 0.25em 0;
+	font-size: 1.57em;
+	font-weight: 600;
+}
+
+.main-data__chart-data h4 span {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	outline: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.main-data__chart-data div:first-child {
+	padding-bottom: 1.14em;
+	border-bottom: 1px solid #CBC8D4;
+}
+
+.main-data__chart-data div:last-child {
+	padding-top: 1.14em;
+}
+
+.statistics {
+	display: flex;
+	align-items: center;
+	gap: 0.4em;
+}
+
+.diagnosis-state {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5em;
+}
+
+.diagnosis-state div {
+	padding: 1.13em;
+	border-radius: 1em;
+	align-self: flex-start;
+}
+
+.diagnosis-state img {
+	max-width: 96px;
+	display: block;
+	margin-bottom: 1.2em;
+}
+
+.diagnosis-state img+p {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.diagnosis-state h4 {
+	font-size: 2.2rem;
+	font-weight: 800;
+	margin-bottom: 0.5em;
+}
+
+.lungs {
+	background: #E0F3FA;
+}
+
+.temperature {
+	background: #FFE6E9;
+}
+
+.heart {
+	background: #FFE6F1;
+}
+
+.diagnosis-list {
+	grid-column: 2/3;
+	grid-row: 2/4;
+	padding: 1.43em;
+	background: #fff;
+	border-radius: 2em;
+}
+
+.diagnosis-list h3 {
+	margin-bottom: 2.86em;
+}
+
+.list-caption {
+	background: #F6F7F8;
+	border-radius: 2em;
+	padding: 1em 1.14em;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	font-weight: 600;
+}
+
+.diagnosis-list__list {
+	height: calc(100% - 9.5rem);
+	overflow: auto;
+}
+
+.diagnosis-list__list div {
+	padding: 1em 1.14em;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	font-weight: 600;
+}
+
+.user-profile {
+	padding: 1.43em;
+	grid-column: 3/4;
+	grid-row: 1/3;
+	background: #fff;
+	border-radius: 2em;
+}
+
+.user-profile h3 {
+	font-weight: 800;
+}
+
+.user-profile__appearance {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 2.3em;
+}
+
+.user-profile__appearance img {
+	margin-top: 1.71em;
+}
+
+.user-data {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.71em;
+	margin-bottom: 2.86em;
+}
+
+.user-data li {
+	display: flex;
+	gap: 1.14em;
+}
+
+.user-data div p:last-child {
+	font-weight: 700;
+	margin-top: 0.3em;
+}
+
+.user-profile button {
+	background: #01F0D0;
+	border: 0;
+	padding: 1em 2.86em;
+	font-size: 1rem;
+	border-radius: 2em;
+	font-family: Manrope;
+	font-weight: bold;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+
+.lab-results{
+	background: #fff;
+	border-radius: 2em;
+	padding: 1.43em;
+}
+.lab-results ul{
+	list-style: none;
+	overflow-y: auto;
+	height: 80%;
+}
+.lab-results ul li{
+	padding: 1em 1.23em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.93rem;
+}
