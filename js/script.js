@@ -136,7 +136,7 @@ fetch("https://fedskillstest.coalitiontechnologies.workers.dev/10", requestOptio
 				<p class="profile__name name">${patient.name}</p>
 				<p class="profile__title title">${patient.gender}, ${patient.age}</p>
 			</div>
-			<p href="#" class="menu"><img src="/img/icons/menu.svg"
+			<p href="#" class="menu"><img src="./img/icons/menu.svg"
 					alt="menu-horizontal"></p>
 		</li>
 	</a>
