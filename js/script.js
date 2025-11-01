@@ -186,7 +186,7 @@ fetch("https://fedskillstest.coalitiontechnologies.workers.dev/10", requestOptio
 		commonProfile.lab_results.forEach(result => {
 			document.querySelector('.lab-results__list').innerHTML += `<li>
 							<span>${result}</span>
-							<img src="/img/icons/download.svg" alt="download">
+							<img src="./img/icons/download.svg" alt="download">
 						</li>`
 		})
 		new Chart(ctx, config([
